@@ -1,12 +1,14 @@
 import React from "react";
 import FirstPage from "./components/FirstPage";
 import Navbar from "./components/Navbar";
+import SecondPage from "./components/SecondPage";
 
 const App: React.FC = () => {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <FirstPage />
+      <SecondPage />
     </div>
   );
 }

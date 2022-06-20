@@ -12,6 +12,7 @@ const FirstPage: React.FC = () => {
   ];
   return (
     <div
+    id="home"
       style={{ backgroundImage: `url(${Background})` }}
       className="bg-center pt-20 pb-[7rem] flex items-start text-white bg-cover"
     >
