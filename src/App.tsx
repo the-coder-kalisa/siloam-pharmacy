@@ -1,4 +1,5 @@
 import React from "react";
+import FifthPage from "./components/FifthPage";
 import FirstPage from "./components/FirstPage";
 import FouthPage from "./components/FouthPage";
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <SecondPage />
       <ThirdPage />
       <FouthPage />
+      <FifthPage />
     </div>
   );
 }
