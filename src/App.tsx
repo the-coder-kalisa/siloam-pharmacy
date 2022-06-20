@@ -1,7 +1,8 @@
+import React from "react";
 import FirstPage from "./components/FirstPage";
 import Navbar from "./components/Navbar";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="">
       <Navbar />

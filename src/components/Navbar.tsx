@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-function Navbar() {
+const Navbar:React.FC =()=> {
     const links: string[] = ["about", "services", "demostration"];
   return (
     <div
