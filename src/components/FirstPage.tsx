@@ -1,7 +1,5 @@
 import { Button } from "@mui/material";
 import React from "react";
-import Rotate from "react-reveal/Rotate";
-import Bounce from "react-reveal/Bounce";
 import Background from "../images/Vector.png";
 const FirstPage: React.FC = () => {
   interface button {
@@ -19,7 +17,6 @@ const FirstPage: React.FC = () => {
       className="bg-center pt-[8rem] pb-[7rem] px-14 flex items-start text-white bg-cover"
     >
       <div className="flex gap-[7rem] flex-col">
-        <Rotate top left>
           <div className="flex flex-col gap-10">
             <div className="text-2xl text-[#E5E5E5]">
               We work to take care of your lives.
@@ -31,8 +28,6 @@ const FirstPage: React.FC = () => {
               Just tell us what you're suffering from and let us cure your.
             </div>
           </div>
-        </Rotate>
-        <Bounce bottom>
           <div className="flex gap-4">
             {buttons.map((button, index) => (
               <Button
@@ -52,7 +47,6 @@ const FirstPage: React.FC = () => {
               </Button>
             ))}
           </div>
-        </Bounce>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import Rect from "../images/Rect.png";
 import Foot from "../images/foot.png";
 import Svg from "./Svg";
-import Zoom from 'react-reveal/Zoom';
 import { FacebookOutlined, Instagram, Twitter } from "@mui/icons-material";
 const FifthPage: React.FC = () => {
   interface Bots {

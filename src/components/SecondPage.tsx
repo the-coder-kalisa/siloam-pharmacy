@@ -1,20 +1,14 @@
 import React from "react";
 import None from "../images/none.png";
-import Slide from "react-reveal/Slide";
 
 const SecondPage: React.FC = () => {
   return (
     <div id="about" className="py-10 flex items-center flex-col">
-      <Slide left delay={1000}>
-        <h1 className="text-center font-bold text-3xl">About us</h1>
-      </Slide>
-      <Slide bottom delay={2000}>
-
+      <h1 className="text-center font-bold text-3xl">About us</h1>
       <div className="text-center max-w-[50rem] font-semibold text-gray-600 text-xl py-5">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident et
         ipsam porro nesciunt laboriosam repellat rerum, fuga molestias
       </div>
-      </Slide>
       <div className="flex gap-24 items-center px-10 py-10">
         <div className="max-w-[32rem] text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
