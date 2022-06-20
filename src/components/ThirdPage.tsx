@@ -58,13 +58,16 @@ const ThirdPage: React.FC = () => {
       </div>
       <div
         className="grid pb-14 pt-5 px-3 gap-5"
-        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(22rem, 1fr))"}}
+        style={{ gridTemplateColumns: "repeat(auto-fit, minmax(22rem, 1fr))" }}
       >
         {paras.map((para, index) => (
-          <div key={index} className="bg-[#228E9C] rounded-md shadow-lg text-white flex flex-col items-center justify-center py-8 px-14 gap-5">
-            <h2 className="text-3xl font-bold">{para.title}</h2>
-            <p className="text-xl font-medium">{para.param}</p>
-          </div>
+            <div
+              key={index}
+              className="bg-[#228E9C] rounded-md shadow-lg text-white flex flex-col items-center justify-center py-8 px-14 gap-5"
+            >
+              <h2 className="text-3xl font-bold">{para.title}</h2>
+              <p className="text-xl font-medium">{para.param}</p>
+            </div>
         ))}
       </div>
     </div>

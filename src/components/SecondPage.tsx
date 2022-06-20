@@ -1,6 +1,6 @@
 import React from "react";
 import None from "../images/none.png";
-
+import Fade from "react-reveal/Fade";
 const SecondPage: React.FC = () => {
   return (
     <div id="about" className="py-10 flex items-center flex-col">
@@ -19,7 +19,9 @@ const SecondPage: React.FC = () => {
           enim, temporibus, excepturi facilis quibusdam mollitia asperiores
           veniam sint veritatis. Omnis sint nobis blanditiis est non illum?
         </div>
-        <img src={None} alt="none" className="max-w-[30rem]" />
+        <Fade right>
+          <img src={None} alt="none" className="max-w-[30rem]" />
+        </Fade>
       </div>
     </div>
   );

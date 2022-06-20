@@ -2,6 +2,7 @@ import React from "react";
 import Rect from "../images/Rect.png";
 import Foot from "../images/foot.png";
 import Svg from "./Svg";
+import Reveal from "react-reveal/Reveal";
 import { FacebookOutlined, Instagram, Twitter } from "@mui/icons-material";
 const FifthPage: React.FC = () => {
   interface Bots {
@@ -31,7 +32,7 @@ const FifthPage: React.FC = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident et
           ipsam porro nesciunt laboriosam repellat rerum, fuga molestias
         </div>
-        <img src={Rect} alt="react" className="my-10" />
+          <img src={Rect} alt="react" className="my-10" />
       </div>
       <div
         style={{ backgroundImage: `url(${Foot})` }}
