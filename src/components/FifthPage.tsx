@@ -22,7 +22,7 @@ const FifthPage: React.FC = () => {
     },
   ];
   return (
-    <>
+    <div id="demostration">
       <div className="flex flex-col items-center pt-10">
         <h1 className="text-center font-bold text-3xl">
           Get a quick demo of the app
@@ -43,16 +43,27 @@ const FifthPage: React.FC = () => {
               <h1 className="font-bold text-2xl max-w-[10rem]">{title}</h1>
               <div className="flex flex-col gap-2">
                 {bols.map((bol, index) => (
-                  <div key={index} className="font-medium text-lg">{bol}</div>
+                  <div key={index} className="font-medium text-lg">
+                    {bol}
+                  </div>
                 ))}
               </div>
             </div>
           ))}
           <div className="flex flex-col gap-5">
             <div className="flex gap-5">
-              <Instagram sx={{ width: 35, height: 35 }} />
-               <FacebookOutlined sx={{ width: 35, height: 35 }} />
-              <Twitter sx={{ width: 35, height: 35 }} />
+              <Instagram
+                sx={{ width: 35, height: 35 }}
+                style={{ cursor: "pointer" }}
+              />
+              <FacebookOutlined
+                sx={{ width: 35, height: 35 }}
+                style={{ cursor: "pointer" }}
+              />
+              <Twitter
+                sx={{ width: 35, height: 35 }}
+                style={{ cursor: "pointer" }}
+              />
             </div>
             <div className="flex flex-col gap-3">
               <span>Get the app:</span>
@@ -63,7 +74,7 @@ const FifthPage: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

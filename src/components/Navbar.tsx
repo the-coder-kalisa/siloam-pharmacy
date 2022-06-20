@@ -14,7 +14,6 @@ const Navbar:React.FC =()=> {
     const links: string[] = ["home","about", "services", "demostration"];
   return (
     <div
-      id="home"
       className={`bg-[${scrolled ? "#38B295" : "transparent"}] px-10 py-5 fixed text-white flex items-center justify-between w-full`}
     >
       <div className="font-bold text-3xl">Siloam</div>
