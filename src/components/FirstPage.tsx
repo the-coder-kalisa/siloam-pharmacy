@@ -32,7 +32,7 @@ const FirstPage: React.FC = () => {
             </div>
           </div>
         </Rotate>
-        <Bounce bottom duration={5000}>
+        <Bounce bottom>
           <div className="flex gap-4">
             {buttons.map((button, index) => (
               <Button
