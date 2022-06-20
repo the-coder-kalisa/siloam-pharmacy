@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Button } from "@mui/material";
 const Navbar:React.FC =()=> {
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(window.scrollY)
+    })
+  })
     const links: string[] = ["home","about", "services", "demostration"];
   return (
     <div
@@ -9,7 +15,7 @@ const Navbar:React.FC =()=> {
     >
       <div className="font-bold text-3xl">Siloam</div>
       <div className="flex justify-center text-[#E5E5E5] text-lg font-medium gap-5 items-center">
-        {links.map( link => <a href={`#${link}`}>{link}</a>)}
+        {links.map( (link, index) => <a key={index} href={`#${link}`}>{link}</a>)}
         <Button variant="outlined" style={{color: "white", border: "2px solid white"}}>LOGIN</Button>
       </div>
     </div>

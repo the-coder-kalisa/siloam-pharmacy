@@ -12,7 +12,7 @@ const FirstPage: React.FC = () => {
   ];
   return (
     <div
-    id="home"
+      id="home"
       style={{ backgroundImage: `url(${Background})` }}
       className="bg-center pt-20 pb-[7rem] flex items-start text-white bg-cover"
     >
@@ -27,8 +27,9 @@ const FirstPage: React.FC = () => {
           Just tell us what you're suffering from and let us cure your.
         </div>
         <div className="flex gap-4">
-          {buttons.map((button) => (
+          {buttons.map((button, index) => (
             <Button
+              key={index}
               style={{
                 textDecoration: "uppercase",
                 color: "white",
