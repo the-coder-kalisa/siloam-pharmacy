@@ -38,7 +38,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className={`${loading && "h-[100vh] flex items-center justify-center"}`}>
+    <div className={`${loading ? "h-[100vh] flex items-center justify-center" : ""}`}>
       {loading ? (
         <CircularProgress />
       ) : (
