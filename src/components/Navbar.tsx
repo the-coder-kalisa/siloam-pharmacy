@@ -4,14 +4,18 @@ const Navbar:React.FC =()=> {
   const [scrolled, setScrolled] = useState<boolean>(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY)
+      window.scrollY >= 540 ? setScrolled(true) : setScrolled(false);
     })
   })
+  useEffect(()=>{
+    window.screenY >= 540 ? setScrolled(true) : setScrolled(false);
+  },[])
+  console.log(scrolled);
     const links: string[] = ["home","about", "services", "demostration"];
   return (
     <div
       id="home"
-      className="bg-transparent px-10 py-5 fixed text-white flex items-center justify-between w-full"
+      className={`bg-[${scrolled ? "#38B295" : "transparent"}] px-10 py-5 fixed text-white flex items-center justify-between w-full`}
     >
       <div className="font-bold text-3xl">Siloam</div>
       <div className="flex justify-center text-[#E5E5E5] text-lg font-medium gap-5 items-center">
