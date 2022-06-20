@@ -52,7 +52,7 @@ const ThirdPage: React.FC = () => {
   return (
     <div id="services" className="flex flex-col items-center">
       <h1 className="text-center font-bold text-3xl">Get our best services</h1>
-      <div className="text-center max-w-[40rem] font-semibold text-gray-600 text-lg py-3">
+      <div className="text-center max-w-[50rem] font-semibold text-gray-600 text-xl py-5">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident et
         ipsam porro nesciunt laboriosam repellat rerum, fuga molestias
       </div>

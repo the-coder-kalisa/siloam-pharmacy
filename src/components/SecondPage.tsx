@@ -4,12 +4,12 @@ const SecondPage: React.FC = () => {
   return (
     <div id="about" className="py-10 flex items-center flex-col">
       <h1 className="text-center font-bold text-3xl">About us</h1>
-      <div className="text-center max-w-[40rem] font-semibold text-gray-600 text-lg py-3">
+      <div className="text-center max-w-[50rem] font-semibold text-gray-600 text-xl py-5">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident et
         ipsam porro nesciunt laboriosam repellat rerum, fuga molestias
       </div>
-      <div className="flex gap-14 items-center px-10 py-5">
-        <div className="max-w-[28rem] text-xl"> 
+      <div className="flex gap-24 items-center px-10 py-10">
+        <div className="max-w-[32rem] text-2xl"> 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
           cupiditate repudiandae vero exercitationem velit nesciunt sint esse,
           ea eius eos voluptatem perspiciatis id neque non quia beatae aliquam

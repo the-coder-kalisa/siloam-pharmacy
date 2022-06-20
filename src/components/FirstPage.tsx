@@ -16,8 +16,8 @@ const FirstPage: React.FC = () => {
       style={{ backgroundImage: `url(${Background})` }}
       className="bg-center pt-[8rem] pb-[7rem] px-14 flex items-start text-white bg-cover"
     >
-      <div className="flex gap-24 flex-col">
-        <div className="flex flex-col gap-7">
+      <div className="flex gap-[7rem] flex-col">
+        <div className="flex flex-col gap-10">
           <div className="text-2xl text-[#E5E5E5]">
             We work to take care of your lives.
           </div>
