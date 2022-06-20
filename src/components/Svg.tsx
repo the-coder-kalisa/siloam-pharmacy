@@ -9,6 +9,7 @@ function Svg() {
         viewBox="0 0 170 58"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        style={{cursor: "pointer"}}
       >
         <rect
           x="0.5"
@@ -37,6 +38,7 @@ function Svg() {
         height="58"
         viewBox="0 0 170 58"
         fill="none"
+        style={{cursor: "pointer"}}
         xmlns="http://www.w3.org/2000/svg"
       >
         <rect

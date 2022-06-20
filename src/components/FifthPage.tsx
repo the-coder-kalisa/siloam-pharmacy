@@ -1,7 +1,7 @@
 import React from "react";
 import Rect from "../images/Rect.png";
 import Foot from "../images/foot.png";
-import Svg from "./Svg"
+import Svg from "./Svg";
 import { FacebookOutlined, Instagram, Twitter } from "@mui/icons-material";
 const FifthPage: React.FC = () => {
   interface Bots {
@@ -35,30 +35,30 @@ const FifthPage: React.FC = () => {
       </div>
       <div
         style={{ backgroundImage: `url(${Foot})` }}
-        className="bg-cover bg-center w-full flex items-center text-white flex-col bg-no-repeat"
+        className="bg-cover bg-center w-full flex items-center py-10 text-white flex-col bg-no-repeat"
       >
-        <div className="flex gap-10">
+        <div className="flex gap-14">
           {bots.map(({ title, bols }, index) => (
             <div className="flex flex-col gap-4" key={index}>
               <h1 className="font-bold text-2xl max-w-[10rem]">{title}</h1>
               <div className="flex flex-col gap-2">
                 {bols.map((bol, index) => (
-                  <div key={index}>{bol}</div>
+                  <div key={index} className="font-medium text-lg">{bol}</div>
                 ))}
               </div>
             </div>
           ))}
-          <div>
-            <div>
-              <Instagram />
-              <FacebookOutlined />
-              <Twitter />
+          <div className="flex flex-col gap-5">
+            <div className="flex gap-5">
+              <Instagram sx={{ width: 35, height: 35 }} />
+               <FacebookOutlined sx={{ width: 35, height: 35 }} />
+              <Twitter sx={{ width: 35, height: 35 }} />
             </div>
-            <div>
-                <span>Get the app:</span>
-                <div>
-                    <Svg />
-                </div>
+            <div className="flex flex-col gap-3">
+              <span>Get the app:</span>
+              <div>
+                <Svg />
+              </div>
             </div>
           </div>
         </div>
