@@ -15,7 +15,7 @@ const FouthPage: React.FC = () => {
     <div
       style={{ background: `url(${background})` }}
       
-      className="w-full flex items-center bg-center bg-cover bg-no-repeat text-white h-[10rem] justify-between px-20"
+      className="w-full flex items-center bg-center bg-cover bg-no-repeat text-white h-[10rem] justify-between px-[10rem]"
     >
       {paragra.map((par, index) => (
         <div key={index} className="flex flex-col items-center">

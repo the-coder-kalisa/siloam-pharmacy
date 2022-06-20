@@ -35,7 +35,7 @@ const FifthPage: React.FC = () => {
       </div>
       <div
         style={{ backgroundImage: `url(${Foot})` }}
-        className="bg-cover bg-center w-full flex items-center py-10 text-white flex-col bg-no-repeat"
+        className="bg-cover bg-center flex items-center py-10 text-white flex-col"
       >
         <div className="flex gap-14">
           {bots.map(({ title, bols }, index) => (
