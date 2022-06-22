@@ -15,30 +15,34 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState<Boolean>(true);
   useEffect(() => {
     let img = new Image();
-    img.onload = () =>{
+    img.onload = () => {
       let img2 = new Image();
-      img2.onload = () =>{
+      img2.onload = () => {
         let img3 = new Image();
-        img3.onload = () =>{
+        img3.onload = () => {
           let img4 = new Image();
-          img4.onload = () =>{
+          img4.onload = () => {
             let img5 = new Image();
-            img5.onload = () =>{
+            img5.onload = () => {
               setLoading(false);
-            }
+            };
             img5.src = Rect;
-          }
+          };
           img4.src = None;
-        }
+        };
         img3.src = Foot;
-      }
+      };
       img2.src = background;
-    }
+    };
     img.src = Background;
   }, []);
 
   return (
-    <div className={`${loading ? "h-[100vh] flex items-center justify-center" : ""}`}>
+    <div
+      className={`${
+        loading ? "h-[100vh] flex items-center justify-center" : ""
+      }`}
+    >
       {loading ? (
         <CircularProgress />
       ) : (
