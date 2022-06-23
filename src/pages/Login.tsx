@@ -27,7 +27,9 @@ function Login() {
           <Link to="/forgot">Forgot password?</Link>
         </div>
         <Divider>Signup with</Divider>
-        <div className="flex justify-center gap-2"></div>
+        <div className="flex justify-center gap-2">
+          
+        </div>
         <div>
           <span className="text-white">Don't have signup yet?</span>
           <Link to="/signup" className="text-blue-400">
