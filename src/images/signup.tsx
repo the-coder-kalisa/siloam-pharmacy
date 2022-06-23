@@ -1,6 +1,6 @@
 import React from "react";
 
-function Signup() {
+const SignupSvg: React.FC = () => {
   return (
     <svg
       data-name="Layer 1"
@@ -201,6 +201,6 @@ function Signup() {
       />
     </svg>
   );
-}
+};
 
 export default Signup;
