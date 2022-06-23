@@ -4,11 +4,11 @@ import LoginSvg from "../images/login";
 
 function Login() {
   interface Value {
-    email: string,
-    password: string
+    email: string;
+    password: string;
   }
-  const inputs : string[] = ["email", "password"];
-  const [values, setValues] = useState<Value>()
+  const inputs: string[] = ["email", "password"];
+  const [values, setValues] = useState<Value | null>(null);
   return (
     <div className="h-[100vh] flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
