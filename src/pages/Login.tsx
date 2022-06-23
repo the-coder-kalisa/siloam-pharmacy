@@ -3,12 +3,14 @@ import LoginSvg from "../images/login";
 
 function Login() {
   return (
-    <div>
-      <div>
-        <h1>Siloam pharmacy</h1>
+    <div className="h-[100vh] flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="font-bold text-3xl">Siloam pharmacy</h1>
         <LoginSvg />
       </div>
-      <form></form>
+      <form>
+        <h1>Login to Siloam pharmacy</h1>
+      </form>
     </div>
   );
 }
