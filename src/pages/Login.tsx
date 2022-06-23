@@ -5,6 +5,7 @@ function Login() {
   return (
     <div>
       <div>
+        <h1>Siloam pharmacy</h1>
         <LoginSvg />
       </div>
       <form></form>
