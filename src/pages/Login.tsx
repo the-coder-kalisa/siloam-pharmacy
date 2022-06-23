@@ -21,7 +21,10 @@ const Login: React.FC = () => {
           Login to Siloam pharmacy
         </h1>
         {inputs.map((input, index) => (
-          <TextField onChange={(e) => setValues({...values, [input] : e.target.value})} label={`${input.at(0)?.toUpperCase()}${input.slice(1)}`} />
+          <TextField
+            onChange={(e) => setValues({ ...values, [input]: e.target.value })}
+            label={`${input.at(0)?.toUpperCase()}${input.slice(1)}`}
+          />
         ))}
         <div className="flex justify-end w-full">
           <Link to="/forgot">Forgot password?</Link>
