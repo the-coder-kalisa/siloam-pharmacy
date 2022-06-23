@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginSvg from "../images/login";
 
-const Login:React.FC =  () => {
+const Login: React.FC = () => {
   interface Value {
     email: string;
     password: string;
@@ -21,7 +21,7 @@ const Login:React.FC =  () => {
           Login to Siloam pharmacy
         </h1>
         {inputs.map((input, index) => (
-          <TextField label={`${input.at(0)?.toUpperCase()}${input.slice(1)}`} />
+          <TextField onChange={(e) => setValues({...values, [input] : e.target.value})} label={`${input.at(0)?.toUpperCase()}${input.slice(1)}`} />
         ))}
         <div className="flex justify-end w-full">
           <Link to="/forgot">Forgot password?</Link>
@@ -37,6 +37,6 @@ const Login:React.FC =  () => {
       </form>
     </div>
   );
-}
+};
 
 export default Login;
