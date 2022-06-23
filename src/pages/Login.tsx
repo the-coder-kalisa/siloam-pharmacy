@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginSvg from "../images/login";
 
-const Login=  () => {
+const Login:React.FC =  () => {
   interface Value {
     email: string;
     password: string;
