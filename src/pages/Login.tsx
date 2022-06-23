@@ -9,7 +9,7 @@ const Login: React.FC = () => {
     password: string;
   }
   const inputs: string[] = ["email", "password"];
-  const [values, setValues] = useState<Value | null>(null);
+  const [values, setValues] = useState<Value | null | any >(null);
   return (
     <div className="h-[100vh] flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
