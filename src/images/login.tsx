@@ -1,6 +1,6 @@
 import React from "react";
 
-function LoginSvg() {
+const LoginSvg : React.FC = () => {
   return (
     <svg
       data-name="Layer 1"
