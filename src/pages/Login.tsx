@@ -26,10 +26,13 @@ function Login() {
         <div className="flex justify-end w-full">
           <Link to="/forgot">Forgot password?</Link>
         </div>
-        <Divider></Divider>
+        <Divider>Signup with</Divider>
+        <div className="flex justify-center gap-2"></div>
         <div>
           <span className="text-white">Don't have signup yet?</span>
-          <Link to="/signup">signup</Link>
+          <Link to="/signup" className="text-blue-400">
+            signup
+          </Link>
         </div>
       </form>
     </div>
