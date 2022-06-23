@@ -1,6 +1,6 @@
 import React from "react";
 
-function login() {
+function Login() {
   return (
     <svg
       data-name="Layer 1"
@@ -162,4 +162,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
