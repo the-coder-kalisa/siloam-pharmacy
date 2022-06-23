@@ -1,3 +1,4 @@
+import { Divider, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginSvg from "../images/login";
@@ -19,7 +20,13 @@ function Login() {
         <h1 className="font-bold text-white text-3xl">
           Login to Siloam pharmacy
         </h1>
-
+        {inputs.map((input, index) => (
+          <TextField label={`${input.at(0)?.toUpperCase()}${input.slice(1)}`} />
+        ))}
+        <div className="flex justify-end w-full">
+          <Link to="/forgot">Forgot password?</Link>
+        </div>
+        <Divider></Divider>
         <div>
           <span className="text-white">Don't have signup yet?</span>
           <Link to="/signup">signup</Link>
