@@ -22,6 +22,7 @@ const Login: React.FC = () => {
         </h1>
         {inputs.map((input, index) => (
           <TextField
+          key={index}
             onChange={(e) => setValues({ ...values, [input]: e.target.value })}
             label={`${input.at(0)?.toUpperCase()}${input.slice(1)}`}
           />
