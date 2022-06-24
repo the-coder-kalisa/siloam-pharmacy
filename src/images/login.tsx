@@ -5,8 +5,7 @@ const LoginSvg : React.FC = () => {
     <svg
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="372.19333"
-      height="664.46398"
+      width="300"
       viewBox="0 0 372.19333 664.46398"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
