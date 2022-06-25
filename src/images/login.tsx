@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-const LoginSvg : React.FC = () => {
+const LoginSvg: React.FC = () => {
   return (
     <svg
       data-name="Layer 1"
@@ -159,6 +159,6 @@ const LoginSvg : React.FC = () => {
       />
     </svg>
   );
-}
+};
 
 export default LoginSvg;
