@@ -1,15 +1,15 @@
-import { Button, Divider, TextField } from "@mui/material"
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import LoginSvg from "../images/login"
+import { Button, Divider, TextField } from "@mui/material";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import LoginSvg from "../images/login";
 
 const Login: React.FC = () => {
   interface Value {
-    email: string
-    password: string
+    email: string;
+    password: string;
   }
-  const inputs: string[] = ["email", "password"]
-  const [values, setValues] = useState<Value | null | any>(null)
+  const inputs: string[] = ["email", "password"];
+  const [values, setValues] = useState<Value | null | any>(null);
   return (
     <div className="h-[100vh] flex gap-10 items-center justify-center">
       <div className="flex flex-col items-center gap-24 h-full min-w-[20rem] justify-center">
