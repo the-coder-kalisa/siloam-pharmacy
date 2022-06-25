@@ -1,5 +1,5 @@
 import { Button, Divider, TextField } from "@mui/material"
-import React, { useState } from "react";
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import LoginSvg from "../images/login"
 
