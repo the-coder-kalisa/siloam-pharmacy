@@ -8,7 +8,7 @@ const Login: React.FC = () => {
     email: string
     password: string
   }
-  const inputs: string[] = ["email", "password"];
+  const inputs: string[] = ["email", "password"]
   const [values, setValues] = useState<Value | null | any>(null)
   return (
     <div className="h-[100vh] flex gap-10 items-center justify-center">
