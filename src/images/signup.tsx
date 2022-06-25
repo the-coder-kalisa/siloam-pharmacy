@@ -203,4 +203,4 @@ const SignupSvg: React.FC = () => {
   );
 };
 
-export default SignupSvg;
+export default SignupSvg
