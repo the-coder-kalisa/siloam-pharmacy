@@ -9,12 +9,11 @@ const Login: React.FC = () => {
     password: string;
   }
   const inputs: string[] = ["email", "password"];
-  const [values, setValues] = useState<Value | null | any>(null);
+  const [values, setValues] = useState<Value | null | any>(null)
   return (
     <div className="h-[100vh] flex gap-10 items-center justify-center">
       <div className="flex flex-col items-center gap-24 h-full min-w-[20rem] justify-center">
         <h1 className="font-bold text-3xl">Siloam pharmacy</h1>
-
         <LoginSvg />
       </div>
       <form className="flex flex-col min-h-[40rem] min-w-[30rem] gap-5 items-center justify-center bg-[#0A5A64]">
