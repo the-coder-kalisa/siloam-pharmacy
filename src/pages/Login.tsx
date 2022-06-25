@@ -5,7 +5,7 @@ import LoginSvg from "../images/login"
 
 const Login: React.FC = () => {
   interface Value {
-    email: string;
+    email: string
     password: string;
   }
   const inputs: string[] = ["email", "password"];
