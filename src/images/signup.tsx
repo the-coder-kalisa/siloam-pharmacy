@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const SignupSvg: React.FC = () => {
   return (
@@ -203,4 +203,4 @@ const SignupSvg: React.FC = () => {
   );
 };
 
-export default SignupSvg
+export default SignupSvg;
